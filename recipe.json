@@ -192,7 +192,7 @@
                 {
                     "id": "office",
                     "title": "Office",
-                    "subtitle": "The LibreOffice suite.",
+                    "subtitle": "Open Source Office suites and applications.",
                     "default": false,
                     "applications" : [
                         {
@@ -200,6 +200,18 @@
                             "icon" : "org.libreoffice.LibreOffice",
                             "flatpak": true,
                             "snap" : true
+                        },
+                        {
+                            "name" : "OnlyOffice",
+                            "icon" : "org.onlyoffice.desktopeditors",
+                            "flatpak" : true,
+                            "snap" : true
+                        },
+                        {
+                            "name" : "Geary",
+                            "icon" : "org.gnome.Geary",
+                            "flatpak" : true,
+                            "snap" : false
                         }
                     ]
                 },
@@ -340,6 +352,16 @@
                     "if" : "LibreOffice",
                     "type" :  "command",
                     "commands" : ["!nextBoot flatpak install -y org.libreoffice.LibreOffice || snap install libreoffice"]
+                },
+                {
+                    "if" : "OnlyOffice",
+                    "type" : "command",
+                    "commands" : ["!nextBoot flatpak install -y org.onlyoffice.desktopeditors || snap install onlyoffice-desktopeditors"]
+                }, 
+                {
+                    "if" : "Geary",
+                    "type" : "command",
+                    "commands" : ["!nextBoot flatpak install -y org.gnome.Geary"]
                 },
                 {
                     "if" : "Bottles",
