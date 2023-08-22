@@ -1,0 +1,66 @@
+using Gtk 4.0;
+
+template $VanillaDefaultWelcome : $AdwBin {
+  halign: "fill";
+  valign: "fill";
+  hexpand: "true";
+
+  $AdwStatusPage status_page {
+    icon-name: "org.vanillaos.FirstSetup-flower";
+
+    Box {
+      spacing: 8;
+      orientation: vertical;
+
+      Overlay {
+        Label {
+          label: _("Welcome!");
+          opacity: 0;
+
+          styles [
+            "title-1",
+          ]
+        }
+
+        [overlay]
+        Label title_label {
+          label: _("Welcome!");
+
+          styles [
+            "title-1",
+          ]
+        }
+      }
+
+      Label {
+        label: "Make your choices, this wizard will take care of everything.";
+        justify: center;
+      }
+
+      Box {
+        spacing: 8;
+        halign: center;
+        margin-top: 8;
+
+        Button btn_advanced {
+          label: "Advanced";
+          halign: center;
+
+          styles [
+            "pill",
+          ]
+        }
+
+        Button btn_next {
+          label: "Start";
+          halign: center;
+
+          styles [
+            "pill",
+            "suggested-action",
+          ]
+        }
+      }
+    }
+  }
+}

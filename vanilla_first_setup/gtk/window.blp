@@ -1,0 +1,41 @@
+using Gtk 4.0;
+
+template $VanillaWindow : $AdwApplicationWindow {
+  default-width: "800";
+  default-height: "750";
+  title: "First Setup";
+
+  Box {
+    orientation: vertical;
+
+    $AdwHeaderBar headerbar {
+      styles [
+        "flat",
+      ]
+      title-widget: 
+      $AdwCarouselIndicatorDots carousel_indicator_dots {
+        carousel: "carousel";
+        orientation: "horizontal";
+      }
+
+      ;
+
+      [start]
+      Button btn_back {
+        label: _("Back");
+        halign: center;
+        visible: false;
+      }
+    }
+
+    $AdwToastOverlay toasts {
+      $AdwCarousel carousel {
+        vexpand: "True";
+        hexpand: "True";
+        allow-scroll-wheel: "False";
+        allow-mouse-drag: "False";
+        allow-long-swipes: "False";
+      }
+    }
+  }
+}

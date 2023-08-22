@@ -1,0 +1,22 @@
+using Gtk 4.0;
+
+template $VanillaDefaultConnCheck : $AdwBin {
+  halign: "fill";
+  valign: "fill";
+  hexpand: "true";
+
+  $AdwStatusPage status_page {
+    icon-name: "content-loading-symbolic";
+    title: _("Checking Connection…");
+    description: _("Please wait until the connection check is done.");
+
+    Button btn_recheck {
+      label: "Check Again";
+      halign: center;
+
+      styles [
+        "pill",
+      ]
+    }
+  }
+}

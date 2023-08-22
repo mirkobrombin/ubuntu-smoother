@@ -1,0 +1,31 @@
+using Gtk 4.0;
+
+template $VanillaPostScript : $AdwBin {
+  $AdwStatusPage {
+    valign: "fill";
+    halign: "fill";
+    icon-name: "org.vanillaos.FirstSetup-flower";
+    title: _("Finalizing");
+    description: _("Your device will be ready soon.");
+
+    Box console_box {
+      margin-start: 40;
+      margin-end: 40;
+      margin-top: 1;
+      margin-bottom: 18;
+      height-request: 250;
+      orientation: vertical;
+
+      Box console_output {
+        margin-top: 12;
+        margin-start: 12;
+        margin-end: 12;
+        orientation: vertical;
+      }
+
+      styles [
+        "card",
+      ]
+    }
+  }
+}

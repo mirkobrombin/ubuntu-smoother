@@ -2,11 +2,33 @@ pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.proje
 moduledir = join_paths(pkgdatadir, 'vanilla_first_setup')
 gnome = import('gnome')
 
+blueprints = custom_target('blueprints',
+  input: files(
+    'gtk/default-conn-check.blp',
+    'gtk/default-hostname.blp',
+    'gtk/default-theme.blp',
+    'gtk/default-user.blp',
+    'gtk/default-welcome.blp',
+    'gtk/dialog.blp',
+    'gtk/done.blp',
+    'gtk/layout-applications.blp',
+    'gtk/layout-preferences.blp',
+    'gtk/layout-yes-no.blp',
+    'gtk/post-script.blp',
+    'gtk/progress.blp',
+    'gtk/tour.blp',
+    'gtk/window.blp',
+  ),
+  output: '.',
+  command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
+)
+
 gnome.compile_resources('vanilla-first-setup',
   'vanilla-first-setup.gresource.xml',
   gresource_bundle: true,
   install: true,
   install_dir: pkgdatadir,
+  dependencies: blueprints,
 )
 
 python = import('python')

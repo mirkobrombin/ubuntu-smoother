@@ -1,0 +1,36 @@
+using Gtk 4.0;
+
+template $VanillaDefaultHostname : $AdwBin {
+  halign: "fill";
+  valign: "center";
+  hexpand: "true";
+
+  Box {
+    orientation: vertical;
+
+    $AdwStatusPage status_page {
+      icon-name: "computer-symbolic";
+      title: _("Device Details");
+      description: _("Provide details about your device");
+
+      $AdwPreferencesPage {
+        $AdwPreferencesGroup {
+          $AdwEntryRow hostname_entry {
+            title: _("Device Name");
+            input-purpose: "name";
+          }
+        }
+      }
+    }
+
+    Button btn_next {
+      halign: center;
+      label: _("Next");
+
+      styles [
+        "pill",
+        "suggested-action",
+      ]
+    }
+  }
+}

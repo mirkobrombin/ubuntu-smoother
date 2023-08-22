@@ -1,0 +1,35 @@
+using Gtk 4.0;
+
+template $VanillaTour : $AdwBin {
+  halign: "fill";
+  valign: "fill";
+  hexpand: "true";
+
+  $AdwStatusPage status_page {
+    halign: "fill";
+    valign: "fill";
+    hexpand: "true";
+
+    Box {
+      orientation: vertical;
+      vexpand: true;
+      hexpand: true;
+      valign: center;
+
+      Box {
+        valign: center;
+        spacing: 10;
+        halign: center;
+
+        Button btn_read_more {
+          label: _("Read More");
+          halign: center;
+
+          styles [
+            "pill",
+          ]
+        }
+      }
+    }
+  }
+}

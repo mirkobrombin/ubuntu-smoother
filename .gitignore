@@ -10,3 +10,4 @@ debian/.debhelper
 /localbuild
 .buildconfig
 install/
+/subprojects/blueprint-compiler
