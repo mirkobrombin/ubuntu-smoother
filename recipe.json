@@ -74,6 +74,91 @@
             "template": "hostname",
             "new-user-only": true
         },
+        "browsers": {
+            "template": "applications",
+            "icon": "web-browser-symbolic.svg",
+            "title": "Browsers",
+            "description": "Choose between web browsers alternatives to install",
+            "bundles": [
+                {
+                    "id": "web-browsers",
+                    "title": "Web Browsers",
+                    "subtitle": "Web Browsers",
+                    "default": false,
+                    "applications": [
+                        {
+                            "name" : "Chromium",
+                            "icon" : "org.chromium.Chromium",
+                            "flatpak" : true,
+                            "snap" : true
+                        },
+                        {
+                            "name" : "Brave Browser",
+                            "icon" : "com.brave.Browser",
+                            "flatpak" : true,
+                            "snap" : true
+                        },
+                        {
+                            "name" : "Firefox",
+                            "icon" : "org.mozilla.firefox",
+                            "flatpak" : true,
+                            "snap" : true
+                         
+                        },
+                        {
+                            "name" : "Chrome",
+                            "icon" : "com.google.Chrome",
+                            "flatpak" : true,
+                            "snap" : false
+                        },
+                        {
+                            "name" : "Microsoft Edge",
+                            "icon" : "com.microsoft.Edge",
+                            "flatpak" : true,
+                            "snap" : false
+                        }, 
+                        {
+                            "name" : "Opera",
+                            "icon" : "com.opera.Opera",
+                            "flatpak" : true,
+                            "snap" : true
+                        }
+                    ]
+                }
+            ],
+            "final": [
+                {
+                    "if" : "Chromium",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y org.chromium.Chromium || snap install chromium"]
+                },
+                {
+                    "if" : "Brave Browser",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y com.brave.Browser || snap install brave"]
+                },
+                {
+                    "if" : "Firefox",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y org.mozilla.firefox || snap install firefox"]
+                },
+                {
+                    "if" : "Chrome",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y com.google.Chrome"]
+                },
+                {
+                    "if" : "Microsoft Edge",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y com.microsoft.Edge"]
+                },
+                {
+                    "if" : "Opera",
+                    "type" :  "command",
+                    "commands" : ["!nextBoot flatpak install -y com.opera.Opera || snap install opera"]
+                }
+            ]
+        },
         "apps": {
             "template": "applications",
             "icon": "org.gnome.Software-symbolic",
