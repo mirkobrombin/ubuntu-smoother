@@ -55,6 +55,7 @@ class VanillaDefaultHostname(Adw.Bin):
                     "if": "setHostname",
                     "type": "command",
                     "commands": ["hostnamectl set-hostname " + self.hostname],
+                    "tests": []
                 }
             ],
         }

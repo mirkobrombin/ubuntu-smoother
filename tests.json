@@ -1,0 +1,9 @@
+{
+  "current": {
+    "flatpak": ["/usr/bin/flatpak", "/usr/lib/x86_64-linux-gnu/gnome-software/plugins-20/libgs_plugin_flatpak.so"],
+    "appimage": ["/bin/fusermount", "/lib/x86_64-linux-gnu/libfuse3.so.3"],
+    "timeshift": ["/usr/bin/timeshift"],
+    "vm": ["/usr/bin/vmtoolsd", "/usr/bin/vmware-user"],
+    "codecs": ["/usr/share/doc/libavcodec-extra/copyright", "/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstlibav.so", "/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgsta52dec.so", "/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstvaapi.so", "/usr/bin/unrar-nonfree"]
+  }
+}

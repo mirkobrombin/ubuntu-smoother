@@ -1,4 +1,5 @@
 recipe.json usr/share/org.vanillaos.FirstSetup/
+tests.json usr/share/org.vanillaos.FirstSetup/
 __first_setup_reset_session usr/bin/
 __first_setup_cleanup usr/bin/
 first-setup.txt etc/vanilla/

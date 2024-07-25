@@ -77,7 +77,7 @@ class VanillaDefaultUser(Adw.Bin):
                         f'adduser --quiet --disabled-password --shell /bin/bash --gecos "{self.fullname}" {self.username}',
                         f'passwd --delete --expire "{self.username}"',
                         f"usermod -a -G sudo,adm,lpadmin {self.username}",
-                    ],
+                    ]
                 }
             ],
         }
