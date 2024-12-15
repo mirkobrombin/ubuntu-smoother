@@ -312,6 +312,18 @@
                             "active": false
                         },
                         {
+                            "name": "LibreWolf",
+                            "icon": "io.gitlab.librewolf-community",
+                            "flatpak": true,
+                            "active": false 
+                        },
+                        {
+                            "name": "Floorp",
+                            "icon": "one.ablaze.floorp",
+                            "flatpak": true,
+                            "active": false
+                        }
+                        {
                             "name": "GNOME Web",
                             "icon": "org.gnome.Epiphany",
                             "flatpak": true,

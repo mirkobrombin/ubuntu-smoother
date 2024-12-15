@@ -78,5 +78,7 @@
     <file>assets/bundle-app-icons/org.mozilla.firefox.png</file>
     <file>assets/bundle-app-icons/com.microsoft.Edge.png</file>
     <file>assets/bundle-app-icons/com.vivaldi.Vivaldi.png</file>
+    <file>assets/bundle-app-icons/io.gitlab.librewolf-community.png</file>
+    <file>assets/bundle-app-icons/one.ablaze.floorp.png</file>
   </gresource>
 </gresources>
