@@ -30,6 +30,7 @@ configure_file(
 configure_file(
   input: 'vanilla-first-setup-prepare-files.in',
   output: 'vanilla-first-setup-prepare-files',
+  install_mode: 'rwxr-xr-x',
   configuration: conf,
   install: true,
   install_dir: get_option('bindir')
