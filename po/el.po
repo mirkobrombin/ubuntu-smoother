@@ -7,13 +7,14 @@
 # Eccl3s <Elliott.Killner@protonmail.com>, 2024.
 # ugaugag <ugaugag@users.noreply.hosted.weblate.org>, 2024.
 # EfremK <konstantinosefremgiannakou@protonmail.com>, 2024.
+# ManolisG <emgeorgat11@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: vanilla-first-setup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 16:40+0530\n"
-"PO-Revision-Date: 2024-09-16 18:09+0000\n"
-"Last-Translator: EfremK <konstantinosefremgiannakou@protonmail.com>\n"
+"PO-Revision-Date: 2025-02-01 18:22+0000\n"
+"Last-Translator: ManolisG <emgeorgat11@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/vanilla-os/"
 "first-setup/el/>\n"
 "Language: el\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: data/org.vanillaos.FirstSetup.desktop.in:3
 msgid "Vanilla OS First Setup"
@@ -62,8 +63,6 @@ msgid "Device Name"
 msgstr "Όνομα συσκευής"
 
 #: vanilla_first_setup/gtk/default-hostname.ui:28
-#, fuzzy
-#| msgid "Provide details about your device"
 msgid "Provide your device name"
 msgstr "Συμπληρώστε το όνομα της συσκευής σας"
 
